@@ -15,6 +15,9 @@ export const MainPage = () => {
         <Round />
         <ResultsTable />
       </div>
+      <div>
+        <StatisticsTable />
+      </div>
     </GameContextProvider>
   );
 };
