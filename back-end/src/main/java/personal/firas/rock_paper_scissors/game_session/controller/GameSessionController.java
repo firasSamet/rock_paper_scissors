@@ -35,4 +35,11 @@ public class GameSessionController {
         return new ResponseEntity<>("Session reset", HttpStatus.OK);
     }
 
+
+    @GetMapping()
+    public ResponseEntity<Object> getStatistics() {
+
+        return new ResponseEntity<>(inMemoryGameSessionService.getStats(), HttpStatus.OK);
+    }
+
 }

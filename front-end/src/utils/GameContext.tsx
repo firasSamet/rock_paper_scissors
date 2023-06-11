@@ -1,9 +1,10 @@
 import React, { createContext, useContext, useEffect, useState } from "react";
 import { RoundModel } from "./RoundModel";
 
-interface GameState {
+export interface GameState {
   sessionId: string;
   gameData: RoundModel[];
+  gameStats: number[];
 }
 
 interface GameContext {
