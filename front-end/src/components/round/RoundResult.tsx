@@ -2,14 +2,13 @@ import React from "react";
 import classnames from "classnames";
 
 import { PlayerChoice } from "../playerChoice/PlayerChoice";
-
 import { RoundModel } from "../../utils/RoundModel";
-
-import "./Round.scss";
 import { parseResult } from "../../utils/Utils";
 
+import "./Round.scss";
+
 interface RoundResultProps {
-  roundResults: RoundModel;
+  roundResults?: RoundModel;
 }
 
 export const RoundResult = ({ roundResults }: RoundResultProps) => {
