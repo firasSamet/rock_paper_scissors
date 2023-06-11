@@ -1,0 +1,28 @@
+.button-base {
+  min-width: 100px;
+  padding: 15px;
+  border-radius: 19px;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  margin-left: 5px;
+  margin-right: 5px;
+
+  &:hover {
+    filter: brightness(110%);
+  }
+
+  &:active {
+    filter: brightness(90%);
+  }
+}
+
+.button-primary {
+  background-color: #62b01e;
+  color: white;
+}
+
+.button-secondary {
+  background-color: #e7be36;
+  color: white;
+}
