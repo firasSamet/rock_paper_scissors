@@ -1,0 +1,20 @@
+.player-choice-container {
+  width: 250px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: aliceblue;
+  border-radius: 21px;
+  margin: 10px;
+  box-shadow: 4px 5px 38px 0px rgba(0, 0, 0, 0.2);
+}
+
+.player-choice-wrapper {
+  align-items: center;
+  justify-content: center;
+
+  .winner {
+    color: gold;
+  }
+}
