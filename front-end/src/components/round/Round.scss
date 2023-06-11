@@ -1,0 +1,21 @@
+.round-container {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.round-wrapper {
+  margin-bottom: 10px;
+  justify-content: center;
+}
+
+.game-result {
+  color: #e7be36;
+  top: 65px;
+
+  &.draw {
+    color: gray;
+  }
+}

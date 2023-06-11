@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RoundResult component Should render correctly 1`] = `
+<body>
+  <div>
+    <div
+      class="round-wrapper"
+    >
+      <div
+        class="round-container"
+      >
+        <div
+          class="player-choice-wrapper"
+        >
+          <div
+            class="player-choice-container"
+          >
+            <div>
+              <h3>
+                Player 
+                1
+              </h3>
+              <p>
+                PAPER
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="player-choice-wrapper"
+        >
+          <div
+            class="player-choice-container"
+          >
+            <div>
+              <h3>
+                Player 
+                2
+              </h3>
+              <p>
+                ROCK
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h1
+        class="game-result"
+      >
+        Player 1 won
+      </h1>
+    </div>
+  </div>
+</body>
+`;
