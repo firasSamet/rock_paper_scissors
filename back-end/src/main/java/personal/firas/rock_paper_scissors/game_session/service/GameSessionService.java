@@ -4,6 +4,7 @@ import personal.firas.rock_paper_scissors.game.model.Round;
 import personal.firas.rock_paper_scissors.game_session.model.GameSession;
 
 import java.util.ArrayList;
+import java.util.Map;
 import java.util.UUID;
 
 public interface GameSessionService {
@@ -18,5 +19,7 @@ public interface GameSessionService {
 
     // empties the rounds list for a given session
     void resetGameSession(UUID sessionID);
+
+    Map<Integer, Integer> getStats();
 
 }

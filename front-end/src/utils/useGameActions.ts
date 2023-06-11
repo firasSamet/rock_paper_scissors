@@ -1,6 +1,7 @@
-import { useGameContext } from './GameContext';
+import { GameState, useGameContext } from './GameContext';
 
 import {api} from './Api';
+import { useEffect } from 'react';
 
 const useGameActions = () => {
   const { gamestate, updateGameContext } = useGameContext();
@@ -46,7 +47,22 @@ const useGameActions = () => {
     }
   };
 
-  return { getSessionId, resetSession, playRound, getRounds };
+  const getStats = async () => {
+    try {
+      const response = await api.getStats();
+      // @ts-expect-error this will fail Typescript unable to infer the correct type
+      updateGameContext((prevState: GameState) => ({ ...prevState, gameStats: response.data }));
+    } catch (error) {
+      console.error('Error retrieving rounds:', error);
+    }
+  }
+
+  useEffect(() => {
+    const intervalId = setInterval(getStats, 1000);
+    return () => clearInterval(intervalId);
+    }, []);
+  
+  return { getSessionId, resetSession, playRound, getRounds, getStats };
 };
 
 export default useGameActions;

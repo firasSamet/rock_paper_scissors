@@ -13,9 +13,12 @@ const playRound = async (id: string) =>
 const getRounds = async (id: string) =>
   await axios.get(`${BASE_API}/games/${id}`);
 
+const getStats = async () => await axios.get(`${BASE_API}/session`);
+
 export const api = {
   getSessionId,
   resetSession,
   playRound,
   getRounds,
+  getStats,
 };
